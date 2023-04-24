@@ -44,9 +44,9 @@ let userJose = users.find(users => users.firstName == 'Jose')
 
 // Get an array of all the premium members
 let usersPrem = users.filter(function(users){
-    return users.isPremiumMember != 'false';
+    return users.isPremiumMember != false;
 })
-//console.log(usersPrem); // Testing function that gets all the premium members
+console.log(usersPrem); // Testing function that gets all the premium members
 
 
 
@@ -61,7 +61,7 @@ let usersLastName = users.map(function(users){
 // Get an array of the full names who have logged in more than 10 times
 
 let usersLoginTen = users.filter(users => users.logins > 10).map(users => users.firstName +" "+ users.lastName);
-console.log(usersLoginTen); //testing function
+//console.log(usersLoginTen); //testing function
 
 
 // Get the total number of logins for the list of users
